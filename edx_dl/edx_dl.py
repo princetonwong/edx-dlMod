@@ -357,13 +357,15 @@ def parse_args():
 
     parser.add_argument('-u',
                         '--username',
-                        required=True,
+                        required=False,
                         action='store',
+                        default= "princetonwong2@gmail.com",
                         help='your edX username (email)')
 
     parser.add_argument('-p',
                         '--password',
                         action='store',
+                        default= "cygzyc-nyBwew-pifti1",
                         help='your edX password, '
                         'beware: it might be visible to other users on your system')
 
@@ -392,7 +394,7 @@ def parse_args():
                         '--ignore-errors',
                         dest='ignore_errors',
                         action='store_true',
-                        default=False,
+                        default=True,
                         help='continue on download errors, to avoid stopping large downloads')
 
     sites = sorted(OPENEDX_SITES.keys())
@@ -412,7 +414,7 @@ def parse_args():
     parser.add_argument('--filter-section',
                         dest='filter_section',
                         action='store',
-                        default=None,
+                        default="7",
                         help='filters sections to be downloaded')
 
     parser.add_argument('--list-sections',
