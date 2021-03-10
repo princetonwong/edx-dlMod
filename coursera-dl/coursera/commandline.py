@@ -58,7 +58,7 @@ def parse_args(args=None):
         '--username',
         dest='username',
         action='store',
-        default=None,
+        default="princetonwong2@gmail.com",
         help='username (email) that you use to login to Coursera')
 
     group_basic.add_argument(
@@ -66,7 +66,7 @@ def parse_args(args=None):
         '--password',
         dest='password',
         action='store',
-        default=None,
+        default="goqhem-3pesJe-tusnat",
         help='coursera password')
 
     group_basic.add_argument(
@@ -346,7 +346,7 @@ def parse_args(args=None):
         '--cauth',
         dest='cookies_cauth',
         action='store',
-        default="Mnb7Bl2gU1FJVNIFatLlH6FrLRe40cSBrnoToMM1QKkknw0mKUwKcDtT3PszG4R9BUoKXLatqcKWDefgzggv8A.5fNV2ZfXKAjQTcgy-M7qBw.GtHf-ODj5IfJC1iSzC5B1OJ7h-zTyPcKdSbsdHg-nXl5a35uxX1Ydc6IaspSN9UbrL-d5MMgcUMujxhRj6ZGx545HRbVLK87nHjEU-D2e-8vqlDcH472wBA7CLcSOXNWRGw9OGWHS_dhZQhRei1JUKUaJ54rsIqtF3wWzjSPX9eYZqsA726A7tQR0vo0i1jK",
+        default="ZjoDJaUmbTyOku5nfT_NqxPumBHzP5XDhqXt4oglVTj4OWWrV_StnDjPn-4ym5eMeKThz_bpbFDM0PAhyUO6bQ.3QaG6CZcLdz2Ed8aTMVBbg.qN7VoqyCco3fCiocszs2aSqdtXNZjmsx1dN1m1qSvQ343xCHpaeSwlros3GMsF0MSMZURt1b-HkYHj9jaO38004nndgvB_ZKXFq5pGodvvrLF3UdNQglzzmUHNXfSE6hDttmLxiT4CUINH0pQFk66Iiw_mIRTB_FjKOzk3Pk7_YnHlHz1fmroFTooJm0e7A3",
         help='cauth cookie value from browser')
 
     group_adv_auth.add_argument(
